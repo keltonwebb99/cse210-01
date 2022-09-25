@@ -3,8 +3,6 @@
 
 
 def main():
-    # player1 = input("First player: ")
-    # player2 = input("Second player: ")
     print("\nThis tictactoe game is similar to real life, if you really wanted to, \nyou could erase your partners selection and put yours in place of it...\nbe sure to watch out for the deception or use the honor system\n")
     board = [1,2,3,4,5,6,7,8,9]
     while not game_over(board) or tie(board):
