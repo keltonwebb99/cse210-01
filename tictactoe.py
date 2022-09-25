@@ -14,6 +14,7 @@ def main():
             move2 = int(input("Where would O like to move: "))
             board[move2 -1] = "O"
 
+#Function to recognize when the game is over
 def game_over(board):
     if (board[0] == board[1] == board[2] or
         board[3] == board[4] == board[5] or
@@ -25,6 +26,7 @@ def game_over(board):
         board[2] == board[4] == board[6]):
         print("Winner!")
         return True
+#Function to recognize when the game is a tie        
 def tie(board):   
     for i in range(9):
         if board[i] != "X" or board[i] != "O":
@@ -33,7 +35,7 @@ def tie(board):
             print("draw")
             return True 
 
-
+#Function to show board and updated board
 def show_board(board):
     print(f"{board[0]}|{board[1]}|{board[2]}\n{board[3]}|{board[4]}|{board[5]}\n{board[6]}|{board[7]}|{board[8]}")
 
